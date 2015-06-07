@@ -1,5 +1,5 @@
 {
-    "name": "jisho",
+    "name": "jisho-lookup",
     "version": "0.0.1",
     "private": true,
     "main": "./app/index.html",
