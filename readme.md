@@ -12,9 +12,9 @@ Jisho-Quickfire is a utility that runs on a NodeJS server for doing quick look-u
 2. Go to the project folder in your Terminal
 3. Run 'npm install'
 4. Run 'gulp build' (it might take some minutes)
-5. You will find the executable Node-Webkit apps of Jisho-Quickfire in the 'build' folder, under your platform (osx, windows, linux)
+5. You will find the executable Node-Webkit apps of Jisho-Quickfire in the 'build/jisho-lookup' folder, under your platform folder (osx, windows, linux).
 
 ## Running Node-Webkit app
 
-If you already built the Node-Webkit app, just open the .nw, .sh or .exe in the 'build' folder as you would normally do.
+If you already built the Node-Webkit app, just open the .nw, .sh or .exe located in the 'build/jisho-lookup' folder as you would normally do.
 Otherwise, you can also run 'gulp run' to open the Node-Webkit app. This way can be more comfortable to test the app while developing.
