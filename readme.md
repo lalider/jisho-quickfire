@@ -1,39 +1,20 @@
-# Jisho-Quickfire
+# Jisho-Quickfire (for Node-Webkit)
 
-This is a utility that runs on a NodeJS server for doing quick look-ups of multiple words in succession using [Jisho.org](http://jisho.org).
+This is a Node-Webkit version of [Jisho Quickfire](https://github.com/sheodox/jisho-quickfire), that can allow users to get the app in a standalone version.
+
+Jisho-Quickfire is a utility that runs on a NodeJS server for doing quick look-ups of multiple words in succession using [Jisho.org](http://jisho.org).
 
 **[Here's a demonstration](http://imgur.com/a/XkNDo)**
 
-## What's it for?
+# How to build the Node-Webkit app
 
-I made this while I was trying to read a manga and I had to look up a bunch of words I didn't know. This simplifies the process of looking up multiple words in a row. 
-Each time you search for a word the first result is shown right below the search box, this means that you can see all of your recent searches at once- making it easier
-to understand a sentence full of words you have to look up. Additionally, after every search your search term is highlighted so you can just start typing and hit 
-enter again for the next word.
-
-Additionally if the first word that appears isn't the one you wanted you can press \[ or \] to go through the first few results.
-
-# How to use this app
-
-## Setup
 1. Clone the repository
-2. Install NodeJS
-3. Navigate to the jisho-quickfire folder in terminal or command prompt (depending on your OS)
-4. Enter the command `npm install`
+2. Go to the project folder in your Terminal
+3. Run 'npm install'
+4. Run 'gulp build' (it might take some minutes)
+5. You will find the executable Node-Webkit apps of Jisho-Quickfire in the 'build' folder, under your platform (osx, windows, linux)
 
-## Running the server
+## Running Node-Webkit app
 
-If you don't feel comfortable running this as an admin, change the `80` to `3000` near the bottom of `app.js` before continuing. If you do this there should be no need 
-to run with elevated privileges, you'll just need to connect to a different port.
-
-### Windows
-
-Right click `run.bat` and click 'Run as administrator'.
-
-### Mac or Linix
-
-Open a terminal to the jisho-quickfire directory and run `sudo run.sh`
-
-## Connecting to the server
-
-Navigate to `localhost` in your browser (alternatively `localhost:3000` if you made the port change in app.js).
+If you already built the Node-Webkit app, just open the .nw, .sh or .exe in the 'build' folder as you would normally do.
+Otherwise, you can also run 'gulp run' to open the Node-Webkit app. This way can be more comfortable to test the app while developing.
